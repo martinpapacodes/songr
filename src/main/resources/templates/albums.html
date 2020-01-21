@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+</head>
+<body>
+<h1>Albums</h1>
+
+<ul>
+    <li th:each="album : ${albumsList}">
+
+
+        <span th:text="${album.title}"></span>
+
+        <img th:src="${album.imageUrl}" alt="">
+
+    </li>
+</ul>
+
+</body>
+</html>
