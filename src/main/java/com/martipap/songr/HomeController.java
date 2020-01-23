@@ -19,6 +19,9 @@ public class HomeController {
     @Autowired
     AlbumRepository albumRepository;
 
+    @Autowired
+    SongRepository songRepository;
+
 @GetMapping("/hello")
     public String getHelloWorld(Model model) {
     String greeting = "Hello World!";
